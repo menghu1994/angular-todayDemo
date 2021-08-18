@@ -1,13 +1,14 @@
 <!-- left-control.component.html -->
 <div class="header-wrapper">
-  <img src="./assets/img/default-avatar.png">
+  <img src="../../../../assets/img/avatar.jpg" class="avatar">
   <span class="username-text"
         *ngIf="!isCollapsed">
     {{ username }}
+    <i nz-icon nzType="fast-backward" nzTheme="outline"></i>
   </span>
   <div class="floating-btn header-btn"
        *ngIf="!isCollapsed">
-    <i class="anticon anticon-setting"></i>
+    <i nz-icon nzType="setting" nzTheme="outline"></i>
   </div>
   <div class="floating-btn header-btn"
        *ngIf="!isCollapsed">
@@ -19,7 +20,7 @@
     <button nz-button
             nzGhost
             nzType="dashed">
-      <i class="anticon anticon-plus"></i>
+      <i nz-icon nzType="plus" nzTheme="outline"></i>
       <span *ngIf="!isCollapsed">新列表</span>
     </button>
   </div>

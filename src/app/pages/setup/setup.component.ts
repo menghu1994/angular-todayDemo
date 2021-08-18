@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalStorageService } from 'src/app/services/local-storage/local-storage.service';
-import { USERNAME, INIT_FLAG, START_USING_DATE } from 'src/app/services/local-storage/local-storage.namespace';
+import { LocalStorageService } from 'app/services/local-storage/local-storage.service';
+import { USERNAME, INIT_FLAG, START_USING_DATE } from 'app/services/local-storage/local-storage.namespace';
 import { getTodayTime } from '../../../utils/time';
 import { Router } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./setup.component.css']
 })
 export class SetupComponent implements OnInit {
-  username?: string;
+  username: string = '';
   value?: string;
   constructor(
     private store: LocalStorageService,

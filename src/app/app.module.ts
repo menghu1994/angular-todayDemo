@@ -14,6 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainModule } from './pages/main/main.module'
 import { SetupModule } from './pages/setup/setup.module';
 
+import { NzGridModule } from 'ng-zorro-antd/grid';
+
+
 registerLocaleData(zh);
 
 @NgModule({
@@ -27,7 +30,8 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     SetupModule,
-    MainModule
+    MainModule,
+    NzGridModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
